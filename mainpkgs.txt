@@ -11,14 +11,17 @@ docker
 docker-compose
 dunst
 exa
+fcitx5-anthy
+fcitx5-chinese-addons
+fcitx5-im
+fcitx5-material-color
+fcitx5-table-extra
+fcitx5-table-other
 feh
 font-manager
-gimp
 glow
 graphicsmagick
 grub-customizer
-ibus-anthy
-ibus-table-chinese
 keepassxc
 libvirt
 lxappearance
@@ -41,7 +44,6 @@ postgresql
 python
 python-pip
 qbittorrent
-qemu-desktop
 redis
 rofi
 rofi-emoji
@@ -51,7 +53,6 @@ shellcheck
 shfmt
 starship
 steam
-stylua
 sxhkd
 sxiv
 syncthing
@@ -63,8 +64,6 @@ tree
 udiskie
 ueberzug
 ufw
-virt-manager
-virt-viewer
 xclip
 xorg-xev
 xorg-xinit

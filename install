@@ -1,0 +1,23 @@
+#! /usr/bin/env bash
+
+echo "Syncing and updating everything..."
+sudo pacman -Syyuu
+# install necessary programs for other packages
+echo "Installing git base-devel for this script... (if they are not installed)"
+sudo pacman --needed -S git base-devel || return 1
+echo "Installed"
+
+# install yay
+echo "Now installing yay..."
+git clone https://aur.archlinux.org/yay.git >/dev/null
+cd yay || return 1
+makepkg -si
+
+cd ..
+# installation loop: read from the pkglist.txt file
+echo "Now installing files from mainpkgs.txt with pacman"
+sudo cat mainpkgs.txt | sudo pacman --needed -S -
+
+# installing progarms that are not in main repository
+echo "Now installing files aurpkgs.txt with yay"
+yay --needed -S - <aurpkgs.txt

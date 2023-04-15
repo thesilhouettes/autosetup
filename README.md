@@ -1,10 +1,7 @@
 # Autosetup
 
-I tried to write a shell script that setups and configures a freshly installed
-Arch Linux system (it uses `pacman` and `yay`). It is basically different
-commands grouped inside shell functions.
-
-**Warning: It is not tested, use it with care.**
+The name is misleading, it is just a collection of shell scripts and package
+lists.
 
 ## Customization
 

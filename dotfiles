@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+DOTFILES_URL=${DOTFILES_URL:-https://github.com/thesilhouettes/.dotfiles}
+
+# installing homeshick
+git clone https://github.com/andsens/homeshick.git "$HOME/.homesick/repos/homeshick"
+
+# cloning into repo
+"$HOME/.homesick/repos/homeshick/bin/homeshick" clone "$DOTFILES_URL"
